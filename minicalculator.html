@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini calculator</title>
+    <style>
+        input{
+            width:240px;
+            height:30px;
+        }
+        button{
+            margin:0px 10px;
+            width:100px;
+            height: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+   <span> <input type="text" placeholder="enter 1st number" id="input1"> <input type="text" placeholder="enter 2nd number" id="input2"> </span>
+   <br>  
+   <br>
+   <span><button class="add">Add</button> <button class="subtract">Subtract</button> <button class="multiply">Multiply</button><button class="divide">Divide</button></span>
+</body>
+<script>
+    let input1=document.querySelector("#input1").value; /*doubt*/
+    let input2=document.querySelector("#input2").value;/*doubt*/
+    let add=document.querySelector(".add");
+    let subtract=document.querySelector(".subtract");
+    let multiply=document.querySelector(".multiply");
+    let divide=document.querySelector(".divide");
+    /* add  code in java script */
+    add.addEventListener("click",function(){
+        let input1=document.querySelector("#input1").value;
+        let input2=document.querySelector("#input2").value;
+        console.log(Number(input1)+Number(input2))
+        
+    })
+    /* subtract  code in java script */
+    subtract.addEventListener("click",function(){
+        let input1=document.querySelector("#input1").value;
+        let input2=document.querySelector("#input2").value;
+       console.log (Number(input1)-Number(input2))
+    })
+     
+    /*  Multiply  code in java script */
+    multiply.addEventListener("click",function(){
+        let input1=document.querySelector("#input1").value;
+        let input2=document.querySelector("#input2").value;
+       console.log (Number(input1)*Number(input2))
+    })
+
+        /*  Divide  code in java script */
+        divide.addEventListener("click",function(){
+        let input1=document.querySelector("#input1").value;
+        let input2=document.querySelector("#input2").value;
+       console.log (Number(input1)/Number(input2))
+    })
+
+
+</script>
+</html>
+
+
